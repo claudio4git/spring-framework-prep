@@ -1,13 +1,15 @@
-import com.jccf.service.GettingService;
+import com.jccf.config.SpringConfiguration;
+import com.jccf.service.GreetingService;
 import com.jccf.service.OutputService;
 import com.jccf.service.TimerService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Application {
 
     public static void main(String[] args) {
-        GettingService gettingService = new GettingService("Hello");
-        TimerService timerService = new TimerService(false);
-        OutputService outputService = new OutputService(gettingService, timerService);
+        ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
+        OutputService outputService = context.getBean(OutputService.class);
 
         outputService.generateOutput("Claudio");
     }
