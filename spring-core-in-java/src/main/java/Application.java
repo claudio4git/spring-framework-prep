@@ -11,6 +11,6 @@ public class Application {
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfiguration.class);
         OutputService outputService = context.getBean(OutputService.class);
 
-        outputService.generateOutput("Claudio");
+        outputService.generateOutput();
     }
 }

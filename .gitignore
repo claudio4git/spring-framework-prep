@@ -24,6 +24,8 @@ hs_err_pid*
 
 # IntelliJ
 **/.idea/
+**/target/
+
 
 # Others
 *.DS_Store
