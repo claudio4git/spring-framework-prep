@@ -102,4 +102,4 @@ public class Application {
 
 ## SpEL and Profiles
 
-[Here](https://github.com/claudio4git/spring-framework-prep/releases/tag/spring-core-in-java-v1) is the v3 tag on GitHub where you can find SpEL and Profiles on `SpringConfiguration`.
+[Here](https://github.com/claudio4git/spring-framework-prep/releases/tag/spring-core-in-java-v3) is the v3 tag on GitHub where you can find SpEL and Profiles on `SpringConfiguration`.
